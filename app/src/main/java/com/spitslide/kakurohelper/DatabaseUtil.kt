@@ -20,7 +20,7 @@ class DatabaseUtil(context: Context) : SQLiteOpenHelper(context, "database.db", 
     fun insertRow(cells: String?, sum: String?, values: String?){
         val contentValues = ContentValues()
         contentValues.put("cells", cells)
-        contentValues.put("sum", s  um)
+        contentValues.put("sum", sum)
         contentValues.put("numbers", values)
         writableDatabase.insert("databases/kakuro", null, contentValues);
 
